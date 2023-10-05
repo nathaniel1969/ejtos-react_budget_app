@@ -38,10 +38,10 @@ const App = () => {
                         <ExpenseTotal />
                     </div>
                     {/* Dropdown for selecting currency */}
-                    <div className='col-sm'>
-                        <label>Currency:</label>
+                    <div className='col-sm currency-selector'>
+                        <label className='currency-label'>Currency:</label>
                         <select
-                            className='form-control'
+                            className='currency-selector-select'
                             value={selectedCurrency}
                             onChange={handleCurrencyChange}
                         >

@@ -38,3 +38,32 @@
     background-color: darkred; /* Change the background color on hover if desired */
   }
   
+  /* Style the currency selector container (light green) */
+.currency-selector {
+    background-color: lightgreen;
+    padding: 5px; /* Add padding for better visual appearance */
+    border-radius: 5px;
+  }
+  
+  /* Style the currency options (light green, white on hover) */
+  .currency-selector select {
+    background-color: lightgreen;
+    color: white; /* Default text color */
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 12px; /* Adjust the top margin to 15px */
+    margin-left: 5px; 
+    cursor: pointer;
+  }
+  
+  .currency-selector select:hover {
+    background-color: white; /* Change background on hover to white */
+    color: black; /* Change text color on hover to black */
+  }
+
+  .currency-label {
+      color: white;
+      margin-left: 10px;
+  }
+  
