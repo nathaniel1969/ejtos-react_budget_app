@@ -45,10 +45,10 @@ const App = () => {
                             value={selectedCurrency}
                             onChange={handleCurrencyChange}
                         >
-                            <option value='USD'>$ Dollar</option>
-                            <option value='GBP'>£ Pound</option>
-                            <option value='EUR'>€ Euro</option>
-                            <option value='INR'>₹ Ruppee</option>
+                            <option value='USD $'>$ Dollar</option>
+                            <option value='GBP £'>£ Pound</option>
+                            <option value='EUR €'>€ Euro</option>
+                            <option value='INR ₹'>₹ Ruppee</option>
                         </select>
                     </div>
                 </div>
