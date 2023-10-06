@@ -28,17 +28,17 @@ const App = () => {
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
                 <div className='row mt-3'>
-                    <div className='col-sm'>
+                    <div className='col-sm d-flex align-items-center h-100'>
                         <Budget />
                     </div>
-                    <div className='col-sm'>
+                    <div className='col-sm d-flex align-items-center h-100'>
                         <RemainingBudget />
                     </div>
-                    <div className='col-sm'>
+                    <div className='col-sm d-flex align-items-center h-100'>
                         <ExpenseTotal />
                     </div>
                     {/* Dropdown for selecting currency */}
-                    <div className='col-sm currency-selector'>
+                    <div className='col-sm d-flex align-items-center h-100 currency-selector'>
                         <label className='currency-label'>Currency:</label>
                         <select
                             className='currency-selector-select'

@@ -59,7 +59,7 @@
   
   .currency-selector select:hover {
     background-color: white; /* Change background on hover to white */
-    color: black; /* Change text color on hover to black */
+    color: green; /* Change text color on hover to green */
   }
 
   .currency-label {
