@@ -15,7 +15,7 @@ const App = () => {
     const [selectedCurrency, setSelectedCurrency] = useState('GBP'); // Default currency is GBP
 
     const handleCurrencyChange = (event) => {
-        const newCurrency = event.target.value;
+        const newCurrency = event.target.value[4];
         setSelectedCurrency(newCurrency);
         dispatch({
             type: 'CHG_CURRENCY',
