@@ -15,7 +15,8 @@ const App = () => {
     const [selectedCurrency, setSelectedCurrency] = useState('GBP'); // Default currency is GBP
 
     const handleCurrencyChange = (event) => {
-        const newCurrency = event.target.value[4];
+        const newCurrency = event.target.value;
+
         setSelectedCurrency(newCurrency);
         dispatch({
             type: 'CHG_CURRENCY',
@@ -42,15 +43,16 @@ const App = () => {
                         <label className='currency-label'>Currency:</label>
                         <select
                             className='currency-selector-select'
-                            value={selectedCurrency}
+                            value={selectedCurrency} // Set the value to match the selectedCurrency state
                             onChange={handleCurrencyChange}
                         >
-                            <option value='USD $'>$ Dollar</option>
-                            <option value='GBP £'>£ Pound</option>
-                            <option value='EUR €'>€ Euro</option>
-                            <option value='INR ₹'>₹ Ruppee</option>
+                            <option value='$'>$ Dollar</option>
+                            <option value='£'>£ Pound</option>
+                            <option value='€'>€ Euro</option>
+                            <option value='₹'>₹ Ruppee</option>
                         </select>
                     </div>
+
                 </div>
                 <h3 className='mt-3'>Allocation</h3>
                 <div className='row '>
